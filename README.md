@@ -49,20 +49,53 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 /* write all the steps invloved */
 
 
-
+```
 ### PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: Shaik sameer
+RegisterNumber:  212221240051
 
+*/
+```
+### Up counter
+module UC(input CLK,input reset,output[0:3]counter);
+reg[0:3]counter_up;
+always@(posedge CLK or posedge reset)
+begin 
+if(reset)
+counter_up<=4'd0;
+else
+counter_up<=counter_up+4'd1;
+end
+assign counter=counter_up;
+endmodule
+```
+```
+### Down counter
+module downcounter(input CLK,input reset,output[0:3]counter);
+reg[0:3]counter_down;
+always@(posedge CLK or posedge reset)
+begin 
+if(reset)
+counter_down<=4'd0;
+else
+counter_down<=counter_down-4'd1;
+end
+assign counter=counter_down;
+endmodule
+```
+```
 
 
 
 
 
 ### RTL LOGIC UP COUNTER AND DOWN COUNTER  
+### Up counter
+![output](https://github.com/Shaik-sameer-AIML/Exp-7-Synchornous-counters-/blob/main/upcounter1.PNG?raw=true)
+### Down counter
+![output](https://github.com/Shaik-sameer-AIML/Exp-7-Synchornous-counters-/blob/main/oc%201.PNG?raw=true)
 
 
 
@@ -71,9 +104,11 @@ RegisterNumber:
 
 
 
-
-### TIMING DIGRAMS FOR COUNTER  
-
+### TIMING DIGRAMS FOR COUNTER
+### Up counter
+![output](https://github.com/Shaik-sameer-AIML/Exp-7-Synchornous-counters-/blob/main/upcounter.PNG?raw=true)
+### Down counter
+![output](https://github.com/Shaik-sameer-AIML/Exp-7-Synchornous-counters-/blob/main/dc%202.PNG?raw=true)
 
 
 
