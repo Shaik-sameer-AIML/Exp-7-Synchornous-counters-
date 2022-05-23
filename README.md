@@ -125,9 +125,9 @@ endmodule
 
 ### TRUTH TABLE 
 ### Up counter
-![output](?raw=true)
+![output](https://github.com/Shaik-sameer-AIML/Exp-7-Synchornous-counters-/blob/main/up%20tt.PNG?raw=true)
 ### Down counter
-![output](?raw=true)
+![output](https://github.com/Shaik-sameer-AIML/Exp-7-Synchornous-counters-/blob/main/dc%20tt.PNG?raw=true)
 
 
 
