@@ -57,6 +57,8 @@ Developed by: Shaik sameer
 RegisterNumber:  212221240051
 
 */
+```
+```
 
 ### Up counter
 module UC(input CLK,input reset,output[0:3]counter);
@@ -70,7 +72,8 @@ counter_up<=counter_up+4'd1;
 end
 assign counter=counter_up;
 endmodule
-`
+```
+```
 ### Down counter
 module downcounter(input CLK,input reset,output[0:3]counter);
 reg[0:3]counter_down;
@@ -113,6 +116,10 @@ endmodule
 
 
 ### TRUTH TABLE 
+### Up counter
+![output](https://github.com/Shaik-sameer-AIML/Exp-7-Synchornous-counters-/blob/main/up%20tt.PNG?raw=true)
+### Down counter
+![output](https://github.com/Shaik-sameer-AIML/Exp-7-Synchornous-counters-/blob/main/dc%20tt.PNG?raw=true)
 
 
 
